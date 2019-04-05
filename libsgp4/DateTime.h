@@ -23,6 +23,8 @@
 #include <sstream>
 #include <chrono>
 #include <cassert>
+#include <algorithm>
+#include "wintime.h"
 #include "TimeSpan.h"
 #include "Util.h"
 

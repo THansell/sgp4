@@ -5,4 +5,4 @@ add_executable(passpredict
     ${SRCS})
 target_link_libraries(passpredict
     sgp4
-    rt)
+    wintime)
