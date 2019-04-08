@@ -3,6 +3,13 @@ set(SRCS
 
 add_executable(sattrack
     ${SRCS})
-target_link_libraries(sattrack
-    sgp4
-    rt)
+
+if (WIN32)
+	target_link_libraries(sattrack
+		sgp4
+		wintime)
+else
+	target_link_libraries(sattrack
+		sgp4
+		rt)
+endif (WIN32)	
