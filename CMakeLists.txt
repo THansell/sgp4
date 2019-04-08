@@ -19,7 +19,7 @@ include_directories(libsgp4)
 if (WIN32)
 	include_directories(wintime)
 	add_subdirectory(wintime)
-endif
+endif (WIN32)
 
 add_subdirectory(libsgp4)
 add_subdirectory(sattrack)

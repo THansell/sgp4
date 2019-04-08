@@ -24,10 +24,10 @@
 #include <chrono>
 #include <cassert>
 
-ifdef WIN32
+#ifdef WIN32
 #include <algorithm>
 #include "wintime.h"
-endif // WIN32
+#endif // WIN32
 
 #include "TimeSpan.h"
 #include "Util.h"

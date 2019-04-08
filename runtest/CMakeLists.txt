@@ -8,7 +8,7 @@ if (WIN32)
 	target_link_libraries(runtest
 		sgp4
 		wintime)
-else
+else (WIN32)
 	target_link_libraries(runtest
 		sgp4
 		rt)
